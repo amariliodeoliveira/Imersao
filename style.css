@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+:root {
+  --purpleLight: #8257e6;
+  --purpleDark: #13131f;
+  --lightGrey: #f1f1f1;
+  --mediumGrey: #d3d3d3;
+}
+
+body {
+  background-color: var(--purpleDark);
+  transition-duration: 0.3s;
+}
+
+body.active {
+  background-color: var(--mediumGrey);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px;
+}
+
+header i {
+  color: var(--purpleLight);
+  cursor: pointer;
+}
+
+header h3 {
+  color: var(--lightGrey);
+}
+
+body.active header h3 {
+  color: var(--purpleLight);
+}
+
+header .menu {
+  transition-duration: 0.3s;
+}
+
+header .menu:hover {
+  background-color: var(--purpleLight);
+  border-radius: 20px;
+  color: var(--purpleDark);
+}
+
+#banner {
+  display: flex;
+  height: calc(100vh - 70px);
+  align-items: center;
+}
+
+#banner .item {
+  width: 50%;
+}
+
+#banner H1 {
+  font-size: 35px;
+  color: var(--lightGrey);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+#banner H1 span {
+  display: block;
+  color: var(--purpleLight);
+}
+
+#banner .conteudo {
+  margin-left: 100px;
+}
+
+#banner p {
+    font-size: 18px;
+    color: var(--mediumGrey);
+    font-weight: bold;
+}
+
+#banner a {
+    display: inline-block;
+    line height: 40px;
+    border-radius: 40px;
+}
